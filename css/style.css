@@ -1,0 +1,51 @@
+
+body {
+    display:flex;
+    flex-direction: row-reverse;
+    width: contain;
+
+}
+
+header {
+    position: absolute;
+}
+
+main {
+    height: 100%;
+    width: 60%;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+
+
+img#profil {
+    width: 500px;
+    height: auto;
+
+}
+
+.half-column {
+    justify-content: space-around;
+}
+
+.half-column#photo {
+    left: -50%;
+}
+
+footer {
+    display: flex;
+    background-color: purple;
+    width: 40%;
+    height: 100%;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    justify-content: space-between;
+}
