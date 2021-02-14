@@ -4,23 +4,43 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;700&amp;display=swap" rel="stylesheet">
         <title>Curriculum Vitae de Caroline Fauvel, bienvenue</title>
     </head>
     <body>
         <header>
-            <div class="container__menu">
-                <nav>Menu</nav>
-            </div>
+            <section class="topbar">
+                <div class="container__menu">
+                    <nav>
+                        <div class="menu__img">
+                            <a href="#mon-menu" data-js="hide">
+                                <img class="menu--here" src='../img/menu.png' alt="logo menu cliquable" id="icon-menu"/>
+                            </a>
+                        </div>
+                        <div class="menu--hide" id="mon-menu">
+                            <ul>
+                                <li>Home</li>
+                                <li>Experiences</li>
+                                <li>About me</li>
+                                <li>Projects</li>
+                                <li>Contact</li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <div class="container__logo">CMF</div>
+            </section>
         </header>
         <main>
             <div class="container__home">
-                <div class="half-column__image">
+                <div class="half half-column__image">
                     <img src="img/Profil pix.jpg" alt="Photo de Caroline" id="profil">
                 </div>                
-                <div class="half-column__presentation">
+                <div class="half half-column__presentation">
                     <div class="rows__text">
-                        <h1>Caroline</h1>
-                        <h2>Titre</h2>
+                        <h1>Caroline Fauvel</h1>
+                        <h4>Développeuse Web et Web mobile en formation</h4>
                         <p>Description</p>
                     </div>
                     <div class="rows__button"><p>Bla</p>
@@ -29,9 +49,9 @@
                 </div>
             </div>
         </main>
-        <footer>
-            <div>LOGO</div>
-            <div>FOOTBAR</div>
+        <footer>            
+            <div class="container__footer">FOOTBAR</div>
         </footer>
+        <script src="js/index.js"></script>
     </body>
 </html>
