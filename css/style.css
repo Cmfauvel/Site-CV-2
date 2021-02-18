@@ -1,10 +1,23 @@
-@media(max-width: 700px)
+@media (min-width: 358px) and (max-width: 700px)
 {
+    .container__home {
+        width: 60%;
+    }
+
+    #mon-menu {
+        font-size: 0.6em;
+    }
+/* regarder s'il est possible de créer un effet au passage du doigt */
+
+    img#profil {
+        right: 40px;
+    }
+
     
 /* Entrez ici vos propriétés CSS lorsque l'utilisateur est sur smartphone */
 }
 
-@media(min-width: 768px) and (max-width: 1388px)
+@media(min-width: 768px) and (max-width: 1250px)
 {
     
 /* Entrez ici vos propriétés CSS lorsque l'utilisateur est sur tablette */	
@@ -12,21 +25,27 @@
 
 body {
     font-family: 'raleway', sans-serif;
-    width: max-content;
-    height: max-content;
-    background-image: url('../img/86389.jpg');
-    background-size: cover;
+    width: auto;
+    height: auto;
+    }
+
+header {
+    position: relative;
 }
 
 main {
     height: inherit;
     width: 100%;
     background-color: hotpink;
-    position: absolute;
+    position: relative;
+}
+
+footer {
+    position: relative;
 }
 
 .container__footer {
-    position: absolute;
+    /*position: absolute;*/
     width: 100%;
     left: 0;
     right: 0;
@@ -64,7 +83,7 @@ main {
   }
   
   .--visible {
-      z-index: 99;
+    z-index: 99;
     max-height: 99em;
     opacity: 1;
     visibility: visible;
@@ -81,26 +100,27 @@ main {
   }
 
   li {
-      padding-left: 8px;
-      padding-right: 8px;;
+      padding-left: 3px;
+      padding-right: 0px;;
+  }
+
+  a:hover {
+      font-size: 1.8em;
+      cursor: pointer;
   }
 
 
 .container__home {
     position: absolute;
+    width: 80%;
     top: 50px;
     left: 20%;
     display: flex;
     flex-wrap: wrap;
 }
 
-.half-column__image {
-    width: 300px;
-    height: 300px;
-}
-
 img#profil {
-    width: inherit;
+    width: 300px;
     height: auto;
     border-radius: 210px;;
     border-color: white;

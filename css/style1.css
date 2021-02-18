@@ -1,0 +1,277 @@
+@media (min-width: 358px) and (max-width: 700px)
+{
+    body {
+        font-family: 'raleway', sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        width: 100%;
+        background-color: rgb(197, 214, 210);
+    }
+
+    header {
+    
+        background-color: rgb(77, 56, 92);
+        width: 100%;
+        margin: 0;
+    
+    }
+
+    .container__home {
+        width: 60%;
+    }
+
+    #mon-menu {
+        font-size: 0.6em;
+    }
+/* regarder s'il est possible de créer un effet au passage du doigt */
+
+    img#profil {
+        right: 40px;
+    }
+
+    footer {
+        position: absolute;
+        bottom: 0;
+    }
+
+    
+/* Entrez ici vos propriétés CSS lorsque l'utilisateur est sur smartphone */
+}
+
+/*@media(min-width: 768px) and (max-width: 1250px)
+{
+    
+/* Entrez ici vos propriétés CSS lorsque l'utilisateur est sur tablette 	
+}*/
+
+body {
+    font-family: 'raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: rgb(197, 214, 210);
+}
+/*propriétés css à mettre automatiquement dans le body*/
+
+/*-----------------Début header-------------*/
+header {
+    
+    background-color: rgb(31, 59, 51);
+    width: 100%;
+    margin: 0;
+
+}
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#icon-menu {
+    width: 50px;
+    height: 50px;
+}
+
+.fas.fa-bars {
+    color: white;
+    width: 50px;
+    height: 50px;
+}
+
+nav {
+    width: 80%;
+    margin: 10px;
+    display: flex;
+
+}
+
+#logo {
+    width: 120px;
+    height: auto;
+    padding-right: 0;
+}
+
+#mon-menu {
+    width: 100%;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    width: 70%;
+}
+
+.menu--hide {
+    transition: .25s ease;
+    max-height: 0;
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .--visible {
+    z-index: 99;
+    max-height: 99em;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  a.liens:hover {
+    font-size: 1.8em;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+/*-----------------Fin header-------------*/
+
+/*-----------------Début main-------------*/
+
+main {
+    width: 100%;
+    padding: 5%;
+}
+.container__home {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+#profil {
+    width: 200px;
+    height: auto;
+    border-radius: 210px;;
+    border-color: white;
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.1);
+    -webkit-border-radius: 210px;
+    -moz-border-radius: 210px;
+    -ms-border-radius: 210px;
+    -o-border-radius: 210px;
+}
+
+.half-column__presentation {
+    background-image: url('../img/86389.jpg');
+    background-blend-mode: overlay;
+    background-color: rgb(69, 107, 98);
+    border-radius: 210px;
+    border-color: white;
+    border: none;
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.1);
+    padding: 50px;
+    margin-top: 50px;
+    margin-left: 50px;   
+}
+
+.rows__text {
+    opacity: 
+}
+
+h1 {
+    color: white;
+    border: 1px solid;
+    border-color: yellow;
+    text-align: center;
+}
+
+/*-----------------Fin main-------------*/
+
+/*-----------------Fin footer-------------*/
+footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    
+}
+.container__footer {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: black;
+    background-color: rgb(31, 59, 51);
+}
+
+/*-----------------Fin footer-------------*/
+
+/*-----------------Main Exp---------------*/
+
+.parcours {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.fas {
+    /*centrer bouton plus le rendre transparent*/
+    transition: opacity 0.3s, left 0.3s, right 0.3s;
+    width: 60px;
+    height: 60px;
+}
+
+img {
+    border-radius: 250px;
+    width: 200px;
+    height: 200px;
+    -webkit-border-radius: 250px;
+    -moz-border-radius: 250px;
+    -ms-border-radius: 250px;
+    -o-border-radius: 250px;
+}
+
+.previous, .next {
+    width: 35px;
+}
+.previous {
+    opacity: 1;
+}
+.
+.container__parcours {
+    display: grid;
+    grid-template-columns: 40% 200px 20%;
+    place-content: center;
+    width: 100%;
+}
+
+.gallery-wrapper {
+    overflow: hidden;
+    width: 100%;
+}
+
+.previous, .next {
+    justify-self: center;
+    align-self: center;
+    cursor: pointer;
+}
+
+.gallery {
+    transform-style: preserve-3d;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    transform: translateX(0px);
+}
+
+.card {
+    margin-right: 20px;
+    align-self: center;
+    display: none;
+}
+
+img {
+    width: 400px;
+    height: auto;
+}
+
+.current {
+    display: block;
+}*/
+
+/*-----------------Fin Exp---------------*/
+
