@@ -144,6 +144,76 @@ img#profil {
 
 
 
+.parcours {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.fas {
+    /*centrer bouton plus le rendre transparent*/
+    transition: opacity 0.3s, left 0.3s, right 0.3s;
+    width: 60px;
+    height: 60px;
+}
+
+img {
+    border-radius: 250px;
+    width: 200px;
+    height: 200px;
+    -webkit-border-radius: 250px;
+    -moz-border-radius: 250px;
+    -ms-border-radius: 250px;
+    -o-border-radius: 250px;
+}
+
+.previous, .next {
+    width: 35px;
+}
+.previous {
+    opacity: 1;
+}
+.
+.container__parcours {
+   /* display: grid;
+    grid-template-columns: 40% 200px 20%;
+    place-content: center;
+    width: 100%;*/
+}
+
+.gallery-wrapper {
+    overflow: hidden;
+    width: 100%;
+    display: block;
+}
+
+.previous, .next {
+    justify-self: center;
+    align-self: center;
+    cursor: pointer;
+}
+
+.gallery {
+    transform-style: preserve-3d;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    transform: translateX(0px);
+}
+
+.card {
+    margin-right: 20px;
+    align-self: center;
+    display: none;
+}
+
+img {
+    width: 400px;
+    height: auto;
+}
+
+.current {
+    display: block;
+}*/
 
 
 

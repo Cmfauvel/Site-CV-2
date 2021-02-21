@@ -17,31 +17,41 @@
 
     //Caroussel
 
-    const leftArrow = document.querySelector('.previous');
-const rightArrow = document.querySelector('.next');
+    const leftArrow = document.querySelector('#previous');
+const rightArrow = document.querySelector('#next');
 
 let images = document.getElementsByClassName('card');
 //déclare un tableau avec toutes mes images
 //console.log(images);
 let currentCard = 0;
 
+let elementParcours = document.getElementsByClassName('text');
+let currentText = 0;
+
 function nextSlide() {
     // je cache l'image current
-    images[currentCard].className = 'card'
+    images[currentCard].className = 'card';
+    elementParcours[currentText].className = 'text';
     // je passe à la prochaine image
-    currentCard = (currentCard + 1) % images.length
+    currentCard = (currentCard + 1) % images.length;
+    currentText = (currentText +1) % elementParcours.length;
     // j'ajoute la classe current à ma nouvelle image pour la rendre visible
-    images[currentCard].className = 'card current'
+    images[currentCard].className = 'card current';
+    elementParcours[currentText].className = 'text current';
     console.log(currentCard)
   }
 
 function prevSlide() {    
-    images[currentCard].className = 'card'    
-    currentCard = (currentCard - 1) % images.length
-    if (currentCard == -1) {
-      currentCard = images.length - 1
+    images[currentCard].className = 'card'    ;
+    elementParcours[currentText].className = 'text';
+    currentCard = (currentCard - 1) % images.length;
+    currentText = (currentText - 1) % elementParcours.length;
+    if (currentCard == -1 && currentText == -1) {
+      currentCard = images.length - 1;
+      currentText = elementParcours.length - 1;
     }    
-    images[currentCard].className = 'card current'
+    images[currentCard].className = 'card current';
+    elementParcours[currentText].className = 'text current';
     console.log(currentCard)
   };
 

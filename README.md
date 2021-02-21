@@ -3,4 +3,6 @@
 Home : footbar à finir
 Responsive mobile
 Contenu à écrire 
-Lien du menu à créer
+
+
+MAJ 21.02 : premier caroussel opération + CSS ok

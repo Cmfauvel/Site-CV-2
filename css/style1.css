@@ -30,10 +30,6 @@
         right: 40px;
     }
 
-    footer {
-        position: absolute;
-        bottom: 0;
-    }
 
     
 /* Entrez ici vos propriétés CSS lorsque l'utilisateur est sur smartphone */
@@ -87,10 +83,14 @@ nav {
 
 }
 
-#logo {
+.container__logo {
     width: 120px;
     height: auto;
-    padding-right: 0;
+}
+
+#logo {
+    width: 100%;
+    
 }
 
 #mon-menu {
@@ -134,7 +134,7 @@ a {
 
 main {
     width: 100%;
-    padding: 5%;
+    margin-top: 50px;
 }
 .container__home {
     display: flex;
@@ -142,10 +142,13 @@ main {
     justify-content: center;
 }
 
-
-#profil {
+.half-column__image {
     width: 200px;
     height: auto;
+
+}
+#profil {
+    width: 100%;
     border-radius: 210px;;
     border-color: white;
     box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.1);
@@ -184,13 +187,11 @@ h1 {
 /*-----------------Fin footer-------------*/
 footer {
     width: 100%;
-    position: absolute;
     bottom: 0;
     right: 0;
-    
+    margin-top: 50px;
 }
 .container__footer {
-    position: absolute;
     width: 100%;
     left: 0;
     right: 0;
@@ -203,75 +204,52 @@ footer {
 
 /*-----------------Main Exp---------------*/
 
-.parcours {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-}
-.fas {
-    /*centrer bouton plus le rendre transparent*/
-    transition: opacity 0.3s, left 0.3s, right 0.3s;
-    width: 60px;
-    height: 60px;
-}
-
-img {
-    border-radius: 250px;
-    width: 200px;
-    height: 200px;
-    -webkit-border-radius: 250px;
-    -moz-border-radius: 250px;
-    -ms-border-radius: 250px;
-    -o-border-radius: 250px;
-}
-
-.previous, .next {
-    width: 35px;
-}
-.previous {
-    opacity: 1;
-}
-.
 .container__parcours {
-    display: grid;
-    grid-template-columns: 40% 200px 20%;
-    place-content: center;
-    width: 100%;
+    width: 80%;
+    height: auto;
+    position: relative;
+    float: center;
+    left: 10%;
 }
 
-.gallery-wrapper {
-    overflow: hidden;
-    width: 100%;
+.gallery--wrapper {
+    display: flex;
+    flex-direction: row;
 }
 
-.previous, .next {
-    justify-self: center;
-    align-self: center;
-    cursor: pointer;
+.card__block {
+    width: 50%;
 }
 
-.gallery {
-    transform-style: preserve-3d;
-    display: grid;
-    grid-template-columns: repeat(5, auto);
-    transform: translateX(0px);
+.text__block {
+    width: 50%;
 }
 
-.card {
-    margin-right: 20px;
-    align-self: center;
+.text {
     display: none;
 }
 
-img {
-    width: 400px;
-    height: auto;
+.card {
+    display: none;
 }
 
-.current {
+.current{
     display: block;
-}*/
+    width: 100%;
+}
+
+#previous {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#next {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
 
 /*-----------------Fin Exp---------------*/
 
