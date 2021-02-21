@@ -5,4 +5,6 @@ Responsive mobile
 Contenu à écrire 
 
 
-MAJ 21.02 : premier caroussel opération + CSS ok
+MAJ 21.02 : premier caroussel opérationnel + CSS ok
+
+MAJ 22.02 : avancement exp + choix design définitif

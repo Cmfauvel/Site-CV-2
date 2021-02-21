@@ -48,15 +48,21 @@ body {
     box-sizing: border-box;
     width: 100%;
     background-color: rgb(197, 214, 210);
+    background-image: url("../img/592164.jpg");
+    background-repeat: repeat;
 }
 /*propriétés css à mettre automatiquement dans le body*/
 
 /*-----------------Début header-------------*/
 header {
     
-    background-color: rgb(31, 59, 51);
+    background-color: rgb(36, 44, 77);
     width: 100%;
     margin: 0;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.1);
 
 }
 .top-bar {
@@ -122,7 +128,7 @@ ul {
     font-size: 1.8em;
 }
 
-a {
+nav a {
     text-decoration: none;
     color: white;
     cursor: pointer;
@@ -133,8 +139,13 @@ a {
 /*-----------------Début main-------------*/
 
 main {
-    width: 100%;
-    margin-top: 50px;
+    width: 80%;
+    margin-top: 180px;
+    margin-bottom: 80px;
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    margin-left: 10%;
+
 }
 .container__home {
     display: flex;
@@ -171,25 +182,20 @@ main {
     margin-left: 50px;   
 }
 
-.rows__text {
-    opacity: 
-}
 
 h1 {
-    color: white;
-    border: 1px solid;
-    border-color: yellow;
+    color: rgb(29, 23, 23);
     text-align: center;
 }
 
 /*-----------------Fin main-------------*/
 
 /*-----------------Fin footer-------------*/
+
 footer {
     width: 100%;
     bottom: 0;
     right: 0;
-    margin-top: 50px;
 }
 .container__footer {
     width: 100%;
@@ -197,16 +203,26 @@ footer {
     right: 0;
     bottom: 0;
     color: black;
-    background-color: rgb(31, 59, 51);
-}
+    background-color: rgb(31, 59, 51);}
 
 /*-----------------Fin footer-------------*/
 
 /*-----------------Main Exp---------------*/
 
+section {
+    padding: 100px 40px;
+    border-bottom: solid 1px;
+    margin: 0 80px;
+}
+
+p {
+    width: 60%;
+    overflow-wrap: break-word; 
+}
+
 .container__parcours {
     width: 80%;
-    height: auto;
+    height: 100%;
     position: relative;
     float: center;
     left: 10%;
@@ -219,10 +235,26 @@ footer {
 
 .card__block {
     width: 50%;
+    position: relative;
+}
+
+.card__block--size {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    display: grid;
+    align-items: center;
 }
 
 .text__block {
     width: 50%;
+    height: 300px;
 }
 
 .text {
@@ -231,6 +263,16 @@ footer {
 
 .card {
     display: none;
+    opacity: 0.8;
+    width: 100%;
+    border-radius: 210px;;
+    border-color: white;
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.1);
+    -webkit-border-radius: 210px;
+    -moz-border-radius: 210px;
+    -ms-border-radius: 210px;
+    -o-border-radius: 210px;
+    
 }
 
 .current{
@@ -241,15 +283,21 @@ footer {
 #previous {
     position: absolute;
     top: 50%;
+    right: 60%;
     transform: translateY(-50%);
+    font-size: 3em;
+    z-index: 5;
 }
 
 #next {
     position: absolute;
     top: 50%;
-    right: 0;
+    left: 300%;
     transform: translateY(-50%);
+    font-size: 3em;
+    z-index: 5;
 }
+
 
 /*-----------------Fin Exp---------------*/
 
