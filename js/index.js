@@ -17,7 +17,7 @@
 
     //Caroussel
 
-    const leftArrow = document.querySelector('#previous');
+const leftArrow = document.querySelector('#previous');
 const rightArrow = document.querySelector('#next');
 
 let images = document.getElementsByClassName('card');
