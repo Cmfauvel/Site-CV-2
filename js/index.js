@@ -55,6 +55,10 @@ function prevSlide() {
     console.log(currentCard)
   };
 
+  // Ici ajouter une boucle pour que la fonction fasse des boucles sans sortir du tableau mais en reprenant au début ou à la fin selon la flêche sur laquelle on clique
+  // for (let i = 0; i < numberOfPassengers; i++) {
+  //     console.log("Passager embarqué !");
+  // }
 rightArrow.addEventListener('click', () => {
     images[currentCard].classList.remove('current');
      nextSlide()
