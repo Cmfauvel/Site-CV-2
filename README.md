@@ -11,3 +11,5 @@ MAJ 22.02 : avancement exp + choix design définitif
 
 Responsive : nav ul à travailler
 Responsive page exp ok
+
+Créer un changement d'icône lorsque menu ouvert

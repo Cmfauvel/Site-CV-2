@@ -100,14 +100,7 @@ nav a {
 /*-----------------Début main-------------*/
 
 main {
-    width: 90%;
-    margin-top: 120px;
-    margin-bottom: 80px;
-    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.1);
-    margin-left: 5%;
-    background-color: white;
-    opacity: 0.95;
-
+    margin-top: 100px;
 }
 
 .container__home {
@@ -155,6 +148,11 @@ footer {
 
 section {
     padding: 5% 10%;
+    width: 100%;
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.1);
+    margin: 10%;
+    background-color: white;
+    opacity: 0.95;
 }
 
 p {
@@ -361,7 +359,7 @@ ul {
     visibility: visible;
   }
 
-  a.liens:hover {
+  a.liens_menu:hover {
     font-size: 1.8em;
 }
 
@@ -376,13 +374,7 @@ nav a {
 /*-----------------Début main-------------*/
 
 main {
-    width: 80%;
-    margin-top: 180px;
-    margin-bottom: 80px;
-    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.1);
-    margin-left: 10%;
-    background-color: white;
-    opacity: 0.95;
+    margin-top: 100px;
 
 }
 
@@ -444,7 +436,13 @@ footer {
 
 section {
     padding: 40px 0px;
-    margin: 0 80px;
+    margin: 10px 20px;
+    width: 80%;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.1);
+    margin-left: 10%;
+    background-color: white;
+    opacity: 0.95;
 }
 
 p {
@@ -457,24 +455,24 @@ p {
     height: 100%;
     float: center;
     position: relative;
-    margin-top: 100px;
 }
 
 .gallery--wrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    width: 90%;
+    margin-left: 5%;
+    
 }
 
 .card__block {
-    width: 50%;
-    width: 300px;
-    height: 300px;
+    width: 35%;
+    padding: 5%;
 }
 
 .text__block {
-    width: 50%;
-    height: 300px;
+    width: 60%;
 }
 
 .text {
@@ -485,7 +483,7 @@ p {
     display: none;
     opacity: 0.8;
     width: 100%;
-    margin-top: 50%;
+    margin-top: 40%;
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
@@ -501,7 +499,7 @@ p {
 #previous {
     position: absolute;
     top: 50%;
-    left: -5%;
+    left: 5%;
     transform: translateY(-50%);
     font-size: 2em;
     z-index: 5;
@@ -510,7 +508,7 @@ p {
 #next {
     position: absolute;
     top: 50%;
-    right: -5%;
+    right: 5%;
     transform: translateY(-50%);
     font-size: 2em;
     z-index: 5;
@@ -540,6 +538,20 @@ button::after {
     color: white;
     text-decoration: none;
     font-size: 1.4em;
+    
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.05em;
+}
+
+.liens_ext {
+    color: white;
+    text-decoration: none;
+    font-size: 1.4em;
+    
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.05em;
 }
 
 .button {
@@ -547,7 +559,7 @@ button::after {
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin-top: 100px;
+    margin-top: 20px;
 }
 
 /*-----------------Fin Exp---------------*/
