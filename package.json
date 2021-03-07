@@ -1,0 +1,21 @@
+{
+  "name": "Site-CV-2",
+  "version": "1.0.0",
+  "description": "Home : footbar à finir\r Responsive mobile\r Contenu à écrire",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cmfauvel/Site-CV-2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cmfauvel/Site-CV-2/issues"
+  },
+  "homepage": "https://github.com/Cmfauvel/Site-CV-2#readme"
+}

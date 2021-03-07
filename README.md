@@ -13,3 +13,8 @@ Responsive : nav ul à travailler
 Responsive page exp ok
 
 Créer un changement d'icône lorsque menu ouvert
+
+
+MAJ 07.03.21 : 
+    - Background OK
+    - Création div skills

@@ -170,7 +170,11 @@ function prevSlide() {
   console.log(currentCard);
 }
 
-;
+; // Ici ajouter une boucle pour que la fonction fasse des boucles sans sortir du tableau mais en reprenant au début ou à la fin selon la flêche sur laquelle on clique
+// for (let i = 0; i < numberOfPassengers; i++) {
+//     console.log("Passager embarqué !");
+// }
+
 rightArrow.addEventListener('click', function () {
   images[currentCard].classList.remove('current');
   nextSlide();
@@ -207,7 +211,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60695" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62327" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -238,9 +242,8 @@ if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
         assetsToAccept.forEach(function (v) {
           hmrAcceptRun(v[0], v[1]);
         });
-      } else if (location.reload) {
-        // `location` global exists in a web worker context but lacks `.reload()` function.
-        location.reload();
+      } else {
+        window.location.reload();
       }
     }
 
