@@ -8,7 +8,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;700&amp;display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/c3dc97330f.js" crossorigin="anonymous"></script>
-        <title>Curriculum Vitae de Caroline Fauvel, bienvenue</title>
+        <title>Parcours et expériences</title>
     </head>
     <body>
         <header>
@@ -21,11 +21,9 @@
                     </div>
                     <div class="menu--hide" id="mon-menu">
                         <ul>
-                            <li><a class="liens" href="Index.html" target="_blank">Home</a></li>
-                            <li><a class="liens" href="Exp.html" target="_blank">Experiences</a></li>
-                            <li><a class="liens">About me</a></li>
-                            <li><a class="liens">Projects</a></li>
-                            <li><a class="liens">Contact</a></li>
+                            <li><a class="liens__menu" href="Index.html" target="_blank">Home</a></li>
+                            <li><a class="liens__menu" href="Exp.html" target="_blank">Experiences</a></li>
+                            <li><a class="liens__menu">Contact</a></li>
                         </ul>
                     </div>
                 </nav>
@@ -38,32 +36,60 @@
                     <h1>Parcours scolaire</h1>
                 </div>
                 <div class="container__parcours">
-                    <i class="fas fa-chevron-left" id="previous"></i>
-                    <i class="fas fa-chevron-right" id="next"></i>
+                    <i class="fas fa-chevron-left" id="previous__formation"></i>
+                    <i class="fas fa-chevron-right" id="next__formation"></i>
                     <div class="gallery--wrapper">
                         <div class="card__block">
-                            <img class="card current" src="img/logo-simplon.gif" alt="Ecole de cinéma">
+                            <img class="card current" src="img/logo-simplon.gif" alt="Logo Simplon">
                             <img class="card" src="img/Eicar_logo.gif" alt="Ecole de cinéma">
-                            <img class="card" src="img/Communication-efficace-consommateurs.jpg" alt="Baccalauréat scientifique">
-                            <img class="card" src="img/bacS.jpg" alt="DUT SR-Communication">
+                            <img class="card" src="img/Communication-efficace-consommateurs.jpg" alt="DUT SRC">
+                            <img class="card" src="img/bacS.jpg" alt="Baccalauréat scientifique">
                         </div>
                         <div class="text__block">
                             <div class="text current">
                                 <h3>Formation Développement web et mobile</h3>
                                 <h4>Java</h4>
-                                <p>Simplon | Janvier 2021 - Aujourd'hui</p>
-                                <p>blablablabla</p>
+                                <h5>Simplon | Janvier 2021 - Aujourd'hui</h5>
+                                <div class="paragraphe__skills--dev">
+                                    <div class="skills__dev">
+                                        <p>#HTML</p>
+                                        <p>#CSS</p>
+                                        <p>#JavaScript</p>
+                                    </div>
+                                    <div class="skills__dev">
+                                        <p>#Java</p>
+                                        <p>#MySQL</p>
+                                    </div>
+                                    <div class="skills__dev --center">
+                                        <p>#Git</p>
+                                        <p>#Github</p>
+                                    </div>
+                                    <div class="skills__dev">
+                                        <p>#NPM</p>
+                                        <p>#Parcel</p>
+                                    </div>
+                                    <div class="skills__dev">
+                                        <p>#VS</p>
+                                        <p>#Eclipse</p>
+                                        <p>#Figma</p>
+                                    </div>
+                                </div>                                
                             </div>
                             <div class="text">
-                                <h3>Licence Réalisation et Ecriture scénaristique</h3>
-                                <p>EICAR | 2013 - 2016</p>
+                                <h3>Réalisation audiovisuelle et Ecriture scénaristique</h3>
+                                <h5>EICAR | 2013 - 2017</h5>
                             </div> 
                             <div class="text">
                                 <h3>DUT SRC</h3>
+                                <h5>CFA Descartes | 2011 - 2012</h5>
                                 <p></p>
                             </div>  
                             <div class="text">
-                                <h3></h3>
+                                <h3>PCEM1, première année de médecine</h3>
+                                <h5>Université Descartes | 2009 - 2010</h5>
+                                <p></p>
+                                <h3>Baccalauréat scientifique</h3>
+                                <h5>Lycée Champlain | 2008</h5>
                                 <p></p>
                             </div>                                  
                         </div>
@@ -80,8 +106,8 @@
                     <h1>Expériences professionnelles</h1>
                 </div>
                 <div class="container__parcours">
-                    <i class="fas fa-chevron-left" id="previous"></i>
-                    <i class="fas fa-chevron-right" id="next"></i>
+                    <i class="fas fa-chevron-left" id="previous__work"></i>
+                    <i class="fas fa-chevron-right" id="next__work"></i>
                     <div class="gallery--wrapper">
                         <div class="card__block">
                             <img class="card current" src="img/logo-simplon.gif" alt="Ecole de cinéma">
@@ -91,17 +117,27 @@
                         </div>
                         <div class="text__block">
                             <div class="text current">
-                                <h3>Formation Développement web et mobile</h3>
-                                <h4>Java</h4>
-                                <p>Simplon | Janvier 2021 - Aujourd'hui</p>
-                                <p>blablablabla</p>
+                                <h3>Professeur contractuelle de mathématiques</h3>
+                                <h5>Collège Paul Langevin | Novembre 2019 - Mars 2020</h5>
+                                <p class="paragraphe__competences">#HTML #CSS #JavaScript #Java #MySQL</p>
+                                <h5>Collège Pablo Neruda | Mars 2019 - Juillet 2019</h5>
+                                <p class="paragraphe__competences">#Git #NPM #Parcel</p>
+                                <p class="paragraphe__competences">#VS #Eclipse #Figma</p>
                             </div>
                             <div class="text">
-                                <h3>Licence Réalisation et Ecriture scénaristique</h3>
-                                <p>EICAR | 2013 - 2016</p>
+                                <h3>Régisseuse</h3>
+                                <h5> QUAD FILMS | 2017 - 2018</h5>
+                                <p>Sur plateau(en extérieur), organisation, logistique.</p>
+                                <h5> Prodigious | 2017 - 2018</h5>
+                                <p>Missions de support, préparation de tournage.</p>
+                                <h3>Réalisatrice</h3>
+                                <h5> Mariage | 2017 - 2018</h5>
+                                <p>Film de commande</p>
+                                <h5> LaForêt | 2017 - 2018</h5>
+                                <p>Film de commande pour l'agence immobilière</p>
                             </div> 
                             <div class="text">
-                                <h3>DUT SRC</h3>
+                                <h3>Chargée de communication</h3>
                                 <p></p>
                             </div>  
                             <div class="text">
@@ -120,101 +156,97 @@
                     </button>
                 </div>
             </section>
-            <div class="container__skills">
-                <section id="section3">
-                    <div class="titre">
-                        <h3>Languages</h3>
+            <section id="section3">
+                <div class="titre">
+                    <h3>Soft skills</h3>
+                </div>
+                <div class="soft_skills">
+                    <p class="skills">Organisation</p>
+                    <div class="barre_competences">
+                        <div class="rond rond--plein"></div>
+                        <div class="rond rond--plein"></div>
+                        <div class="rond rond--plein"></div>
+                        <div class="rond rond--plein"></div>
+                        <div class="rond rond--vide"></div>
                     </div>
-                    <div class="soft_skills">
-                        <p class="skills">Anglais</p>
-                        <div class="barre_competences">
-                            <div class="rond rond--plein"></div>
-                            <div class="rond rond--plein"></div>
-                            <div class="rond rond--plein"></div>
-                            <div class="rond rond--vide"></div>
-                            <div class="rond rond--vide"></div>
-                        </div>
-                        <p class="descriptions">Notes</p>
+                    <p class="descriptions">Notes</p>
+                </div>
+                <div class="soft_skills">
+                    <p class="skills">Aisance rédactionnelle</p>
+                    <div class="barre_competences">
+                        <div class="rond rond--plein"></div>
+                        <div class="rond rond--plein"></div>
+                        <div class="rond rond--plein"></div>
+                        <div class="rond rond--plein"></div>
+                        <div class="rond rond--plein"></div>
                     </div>
-                    <div class="soft_skills">
-                        <p class="skills">HTML5</p>
-                        <div class="barre_competences">
-                            <div class="rond rond--plein"></div>
-                            <div class="rond rond--plein"></div>
-                            <div class="rond rond--plein"></div>
-                            <div class="rond rond--plein"></div>
-                            <div class="rond rond--vide"></div>
-                        </div>
-                        <p class="descriptions">Notes</p>
+                    <p class="descriptions">Notes</p>
+                </div>
+                <div class="soft_skills">
+                    <p class="skills">Esprit d'équipe</p>
+                    <div class="barre_competences">
+                        <div class="rond rond--plein"></div>
+                        <div class="rond rond--plein"></div>
+                        <div class="rond rond--plein"></div>
+                        <div class="rond rond--plein"></div>
+                        <div class="rond rond--vide"></div>
                     </div>
-                    <div class="soft_skills">
-                        <p class="skills">CSS</p>
-                        <div class="barre_competences">
-                            <div class="rond rond--plein"></div>
-                            <div class="rond rond--plein"></div>
-                            <div class="rond rond--plein"></div>
-                            <div class="rond rond--vide"></div>
-                            <div class="rond rond--vide"></div>
-                        </div>
-                        <p class="descriptions">Notes</p>
+                    <p class="descriptions">Notes</p>
+                </div>
+                <div class="soft_skills">
+                    <p class="skills">Autonomie</p>
+                    <div class="barre_competences">
+                        <div class="rond rond--plein"></div>
+                        <div class="rond rond--plein"></div>
+                        <div class="rond rond--plein"></div>
+                        <div class="rond rond--plein"></div>
+                        <div class="rond rond--vide"></div>
                     </div>
-                    <div class="soft_skills">
-                        <p class="skills">JavaScript</p>
-                        <div class="barre_competences">
-                            <div class="rond rond--plein"></div>
-                            <div class="rond rond--plein"></div>
-                            <div class="rond rond--plein"></div>
-                            <div class="rond rond--vide"></div>
-                            <div class="rond rond--vide"></div>
-                        </div>
-                        <p class="descriptions">Notes</p>
+                    <p class="descriptions">Notes</p>
+                </div>
+                <div class="soft_skills">
+                    <p class="skills">Créativité</p>
+                    <div class="barre_competences">
+                        <div class="rond rond--plein"></div>
+                        <div class="rond rond--plein"></div>
+                        <div class="rond rond--plein"></div>
+                        <div class="rond rond--plein"></div>
+                        <div class="rond rond--vide"></div>
                     </div>
-                    <div class="soft_skills">
-                        <p class="skills">SQL</p>
-                        <div class="barre_competences">
-                            <div class="rond rond--plein"></div>
-                            <div class="rond rond--plein"></div>
-                            <div class="rond rond--plein"></div>
-                            <div class="rond rond--plein"></div>
-                            <div class="rond rond--vide"></div>
-                        </div>
-                        <p class="descriptions">Notes</p>
-                    </div>
-                    <div class="soft_skills">
-                        <p class="skills">Java</p>
-                        <div class="barre_competences">
-                            <div class="rond rond--plein"></div>
-                            <div class="rond rond--plein"></div>
-                            <div class="rond rond--vide"></div>
-                            <div class="rond rond--vide"></div>
-                            <div class="rond rond--vide"></div>
-                        </div>
-                        <p class="descriptions">Notes</p>
-                    </div>
-                    <div class="button">
-                        <button class="">
-                            <a href="#section2" class="liens_int">Back</a>
-                        </button>
-                    </div>
-                </section>
-                <section id="section4">
-                    <div class="titre">
-                        <h3>Soft skills</h3>
-                    </div>
-                    <div class="soft_skills">
-                        <p class="skills">Organisation</p>
-                        <div class="barre_competences">
-                            <div class="rond rond--plein"></div>
-                            <div class="rond rond--plein"></div>
-                            <div class="rond rond--plein"></div>
-                            <div class="rond rond--plein"></div>
-                            <div class="rond rond--vide"></div>
-                        </div>
-                        <p class="descriptions">Notes</p>
-                    </div>
-                </section>
-            </div>
-            
+                    <p class="descriptions">Notes</p>
+                </div>
+                <div class="button">
+                    <button class="">
+                        <a href="#section2" class="liens_int">Back</a>
+                    </button>
+                    <button class="">
+                        <a href="#section4" class="liens_int">Next</a>
+                    </button>
+                </div>
+            </section>
+            <section id="section4">
+                <div class="titre">
+                    <h3>Intérêts</h3>
+                </div>
+                <div class="interets">
+                    <h5>Poker</h5>
+                    <p>Poker</p>
+                    <h5>Jeux Vidéos</h5>
+                    <p>Jeux Vidéos</p>
+                    <h5>Ecriture</h5>
+                    <p>Ecriture</p>
+                    <h5>Sports d'hiver</h5>
+                    <p>Sports d'hiver</p>
+                </div>
+                <div class="button">
+                    <button class="">
+                        <a href="#section3" class="liens_int">Back</a>
+                    </button>
+                    <button class="">
+                        <a href="#section1" class="liens_int">Top</a>
+                    </button>
+                </div>
+            </section>     
         </main>    
         <footer>            
             <div class="container__footer">FOOTBAR</div>

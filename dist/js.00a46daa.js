@@ -132,8 +132,10 @@ window.onload = function () {
 }; //Caroussel
 
 
-var leftArrow = document.querySelector('#previous');
-var rightArrow = document.querySelector('#next');
+var leftArrow1 = document.querySelector('#previous__formation');
+var rightArrow1 = document.querySelector('#next__formation');
+var leftArrow2 = document.querySelector('#previous__work');
+var rightArrow2 = document.querySelector('#next__work');
 var images = document.getElementsByClassName('card'); //déclare un tableau avec toutes mes images
 //console.log(images);
 
@@ -175,11 +177,19 @@ function prevSlide() {
 //     console.log("Passager embarqué !");
 // }
 
-rightArrow.addEventListener('click', function () {
+rightArrow1.addEventListener('click', function () {
   images[currentCard].classList.remove('current');
   nextSlide();
 });
-leftArrow.addEventListener('click', function () {
+leftArrow1.addEventListener('click', function () {
+  images[currentCard].classList.remove('current');
+  prevSlide();
+});
+rightArrow2.addEventListener('click', function () {
+  images[currentCard].classList.remove('current');
+  nextSlide();
+});
+leftArrow2.addEventListener('click', function () {
   images[currentCard].classList.remove('current');
   prevSlide();
 });
@@ -211,7 +221,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62327" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60347" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

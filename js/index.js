@@ -17,8 +17,10 @@
 
     //Caroussel
 
-const leftArrow = document.querySelector('#previous');
-const rightArrow = document.querySelector('#next');
+const leftArrow1 = document.querySelector('#previous__formation');
+const rightArrow1 = document.querySelector('#next__formation');
+const leftArrow2 = document.querySelector('#previous__work');
+const rightArrow2 = document.querySelector('#next__work');
 
 let images = document.getElementsByClassName('card');
 //déclare un tableau avec toutes mes images
@@ -59,12 +61,22 @@ function prevSlide() {
   // for (let i = 0; i < numberOfPassengers; i++) {
   //     console.log("Passager embarqué !");
   // }
-rightArrow.addEventListener('click', () => {
+rightArrow1.addEventListener('click', () => {
     images[currentCard].classList.remove('current');
      nextSlide()
  });
  
- leftArrow.addEventListener('click', () => {
+ leftArrow1.addEventListener('click', () => {
     images[currentCard].classList.remove('current');
     prevSlide()
+});
+
+rightArrow2.addEventListener('click', () => {
+  images[currentCard].classList.remove('current');
+   nextSlide()
+});
+
+leftArrow2.addEventListener('click', () => {
+  images[currentCard].classList.remove('current');
+  prevSlide()
 });
