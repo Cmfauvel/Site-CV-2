@@ -6,7 +6,6 @@ body {
     padding: 0;
     box-sizing: border-box;
     width: 100%;
-    /* background-image: url('../img/abstract-1963820_960_720.jpg'); */
     background: linear-gradient(-45deg, #f1b8a7, #483b58, #1f5b70, #8becd6);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite; 
@@ -114,6 +113,8 @@ nav a {
 
 main {
     margin-top: 60px;
+    width: 80%;
+    margin-left: 10%;
 }
 
 .container__home {
@@ -156,73 +157,71 @@ h1 {
 
 /*-----------------Fin main-------------*/
 
-/*-----------------Début Parallax coding-------------
-.section__parallax {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    font-family: big john;
-    width: 100%;
-    height: 100vh;
-}
-h2 {
-    font-size: 40px;
-    background: white;
-    padding: 8px 24px;
-    border-radius: 16px;
-    -webkit-border-radius: 16px;
-    -moz-border-radius: 16px;
-    -ms-border-radius: 16px;
-    -o-border-radius: 16px;
-}
-.section__parallax:nth-child(1) {
-    background-image: url(../img/img_horloge.png);
-    background-size: cover;
-    background-attachment: fixed;
-}
-.section__parallax:nth-child(2) {
-    background-attachment: fixed;
-}
-.section__parallax:nth-child(3) {
-    height: 400px;
-    background-image: url(../img/img_horloge.png);
-    background-size: cover;
-    background-attachment: fixed;
-}
-.section__parallax:nth-child(4) {
-    background-attachment: fixed;
-}
------------------Fin Parallax coding-------------*/
-
 /*-----------------Début footer-------------*/
 
 footer {
     width: 100%;
     bottom: 0;
-    right: 0;
+    right: 0;    
 }
+
+.footer--index {
+    position: absolute;
+}
+
 .container__footer {
     width: 100%;
     left: 0;
     right: 0;
     bottom: 0;
     color: rgb(233, 226, 226);
-    background-color: rgb(31, 39, 59);}
+    background-color: rgb(31, 39, 59);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 0.5em;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.footer__liens--left,
+.footer__contact--center,
+.footer__copyright--right {
+    width: 33%;
+}
+
+.footer__contact--left {
+    display: flex;
+    flex-direction: column;
+    justify-self: left;
+}
+
+.footer__contact--center {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer__copyright--right {
+    align-self: flex-end;
+    justify-self: right;
+}
+
 
 /*-----------------Fin footer-------------*/
 
 /*-----------------Main Exp---------------*/
 
 
+
 section {
-    padding: 40px 0px;
-    margin: 10px 20px;
-    width: 80%;
-    margin-left: 10%;
     box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.1);
     background-color: white;
-    opacity: 0.95; 
+    padding: 10px;
+    margin-bottom: 20px;
+
 }
 
 p {
@@ -230,38 +229,71 @@ p {
     overflow-wrap: break-word; 
 }
 
+.slides1,
+.slides2 {
+    width: 100%;
+    position: relative;
+    min-height: 400px;
+    background-color: white;
+    align-content: center;
+}
+
+/* .slides .slide {
+    display: none;
+} */
+
+.slide,
+.slide2 {
+    display: flex;
+    width: 100%;
+    /* position: absolute; */
+    justify-content: space-around;
+}
+
+.hide {
+    display: none;
+}
+
+
+.show {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
 .titre {
     text-align: center;
     border: 1px #231D2B;
     background-color: white;
     opacity: 0.95;
+    margin-bottom: 20px;
 }
 
-.container__parcours {
+/* .container__parcours {
     width: 100%;
     height: 100%;
     position: relative;
-}
-
-.gallery--wrapper {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 90%;
-    margin-left: 5%;    
-}
+} */
 
 .card__block {
-    width: 35%;
-    padding: 5%;
+    flex: 1 0 30%;
+    align-self: center;
 }
 
 .text__block {
-    width: 60%;
+    flex: 1 0 60%;
     font-size: 0.65em;
-    text-align: center;
-    
+    text-align: center;    
 }
+
+.card {
+    width: 80%;
+    height: 80%;
+    padding-left: 20%;
+    padding-top: 20%;
+}
+
 
 .paragraphe__skills--dev {
     width: 80%;
@@ -272,7 +304,10 @@ p {
     margin-left: 10%;
 }
 
-.skills__dev {
+.skills__dev,
+.skills__cine,
+.skills__comm,
+.skills__etudiant {
     display: flex;
     justify-content: space-between;
     text-align: center;
@@ -280,39 +315,25 @@ p {
     align-items: center;
 }
 
-
-.text {
-    display: none;
-}
-
-.card {
-    display: none;
-    width: 100%;
-}
-
-.current{
-    display: block;
-    width: 100%;
-}
-
-#previous__formation {
+#previous__slide,
+#next__slide {
     position: absolute;
-    top: 50%;
+    top: 50%;    
+    transform: translateY(-50%);
+    font-size: 2em;
+    z-index: 5;
+    cursor: pointer;
+}
+
+#previous__slide {
     left: 5%;
-    transform: translateY(-50%);
-    font-size: 2em;
-    z-index: 5;
 }
 
-#next__formation {
-    position: absolute;
-    top: 50%;
+#next__slide {
     right: 5%;
-    transform: translateY(-50%);
-    font-size: 2em;
-    z-index: 5;
+    
 }
-
+/* 
 #previous__work {
     position: absolute;
     top: 50%;
@@ -329,7 +350,7 @@ p {
     transform: translateY(-50%);
     font-size: 2em;
     z-index: 5;
-}
+} */
 
 button {
     border-radius: 25px;
@@ -431,131 +452,3 @@ button::after {
 
 
 /*-----------------Fin Exp---------------*/
-
-@media screen and (min-width: 350px) and (max-width: 757px){
-    
-    
-    /*propriétés css à mettre automatiquement dans le body*/
-
-    /*-----------------Début header-------------*/
-
-    
-    ul {
-        display: flex;
-        flex-direction: column;
-        list-style-type: none;
-    }
-    /*VOIR LA DISPOSITION FINALE*/
-
- 
-
-    /*-----------------Fin header-------------*/
-
-    /*-----------------Début main-------------*/
-
-
-    .container__home {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        
-    }
-
-    .half {
-        width: 50%;
-    }
-
-
-    h1 {
-        color: rgb(29, 23, 23);
-        text-align: center;
-    }
-
-    /*-----------------Fin main-------------*/
-
-    /*-----------------Fin footer-------------*/
-
-
-    /*-----------------Fin footer-------------*/
-
-    /*-----------------Main Exp---------------*/
-
-
-    section {
-        padding: 5% 5%;
-        width: 70%;
-        margin: 10%;
-    }
-
-
-
-    .container__parcours {
-       
-        margin-top: 30px;
-    }
-
-    .gallery--wrapper {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-    }
-
-    .card__block {
-        width: 30%;
-        width: 200px;
-        height: 200px;
-    }
-
-    .text__block {
-        width: 75%;
-        height: 300px;
-    }
-
-
-    .card {
-        margin-top: 50%;
-    }
-
-    .current{
-        display: block;
-        width: 100%;
-    }
-
-
-    #next {
-        position: absolute;
-        right: -5%;
-    }
-
-    button {
-        border-radius: 25px;
-        border-style: none;
-        -webkit-border-radius: 25px;
-        -moz-border-radius: 25px;
-        -ms-border-radius: 25px;
-        -o-border-radius: 25px;
-        box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.1);
-        background-color: RGB(52, 44, 59, 0.92);
-        padding: 10px 20px;
-    }
-
-    
-    .container__skills {
-        display: flex;
-        flex-direction: column;
-    
-    }
-
-    #section3,
-    #section4 {
-        width: 70%;
-        margin-left: 10%;
-        margin-top: -5px;
-    } 
-
-    .skills {
-        font-size: 0.8em;
-    }
-
-}
