@@ -12,6 +12,7 @@
     <body>
         <header>
             <div class="top-bar">
+                <div class="container__logo"><img id="logo" src="img/logo-cmf.png" alt="logo"></div>
                 <nav>
                     <div class="menu__icon">
                         <a href="#mon-menu" data-js="hide">
@@ -20,35 +21,49 @@
                     </div>
                     <div class="menu--hide" id="mon-menu">
                         <ul>
-                            <li><a class="liens__menu" href="Index.html" target="_blank">Home</a></li>
-                            <li><a class="liens__menu" href="Exp.html" target="_blank">Experiences</a></li>
-                            <!--<li><a class="liens_menu" href="Coding.html" target="_blank">Coding</a></li>-->
-                            <li><a class="liens__menu" href="Contact.html" target="_blank" >Contact</a></li>
+                            <li><a class="liens__menu" href="Index.html" target="_blank"><i class="fas fa-home"></i></a></li>
+                            <li><a class="liens__menu" href="Experiences.html" target="_blank"><i class="fas fa-briefcase"></i></a></li>
+                            <li><a class="liens__menu" href="School.html" target="_blank"><i class="fas fa-graduation-cap"></i></a></li>
+                            <li><a class="liens__menu" href="Contact.html" target="_blank" ><i class="far fa-address-card"></i></a></li>
                         </ul>
                     </div>
                 </nav>
-                <div class="container__logo"><img id="logo" src="img/logo-cmf.png" alt="logo"></div>
             </div>
         </header>
         <main>
-        </main>
-        <footer>
-            <div class="container__footer">
-                <div class="footer__contact--left">
+            <div class="container__contact">
+                <div class="half half-column__text--right">
                     <i class="fas fa-map-marker-alt"></i>
                     <p>5, rue Tournadour 93600 Aulnay-Sous-Bois</p>
+                    <i class="fas fa-at"></i>
                     <p>cm.fauvel@gmail.com</p>
                     <i class="fas fa-phone-square-alt"></i><br>
                     <p>06.64.76.94.23</p>
                 </div>
-                <div class="footer__liens--center">
-                    <a href="https://www.linkedin.com/in/caroline-fauvel-5086b41ba/" target="_blank"><i class="fab fa-linkedin"></i></a><br>
-                    <p>Linkedin</p>
+                <div class="half half-column__image">
+                    <img src="img/abientot.jpg" alt="" id="end">
+                </div>
+            </div>
+            <div class="button__download">
+                <button class="button__pdf">
+                    <a class="liens_ext" href="PDF/CV_Caroline-Fauvel.pdf" download="CVCarolineFauvel">CV.pdf</a>
+                </button>
+            </div>
+        </main>
+        <footer class="footer--contact">            
+            <div class="container__footer">
+                <div class="footer__linkedin--left">
+                    <i class="fab fa-linkedin"></i>
+                    <a class="liens__footer" href="https://www.linkedin.com/in/caroline-fauvel-5086b41ba/" target="_blank">Linkedin</a>
+                </div>
+                <div class="footer__github--center">
+                    <i class="fab fa-github"></i>
+                    <a class="liens__footer" href="https://github.com/Cmfauvel">Github</a>
                 </div>
                 <div class="footer__copyright--right">
-                    <p>c Caroline Fauvel 2021</p>
+                    <p>© Caroline Fauvel 2021</p>
                 </div>
-            </div>            
+            </div>
         </footer>
         <script src="js/index.js"></script>
     </body>

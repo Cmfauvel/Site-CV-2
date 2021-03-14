@@ -130,9 +130,9 @@ window.onload = function () {
     });
   });
 }; //     //Caroussel
+// const leftArrow = document.querySelector('#previous__slide');
 
 
-var leftArrow = document.querySelector('#previous__slide');
 var rightArrow = document.querySelector('#next__slide'); // const leftArrow2 = document.querySelector('#previous__work');
 // const rightArrow2 = document.querySelector('#next__work');
 
@@ -168,65 +168,7 @@ rightArrow.addEventListener('click', function () {
   }
 
   console.log(slideIndex, slides.length);
-}); // leftArrow.addEventListener('click', () => {
-//   let currentElement = document.querySelector('.show');
-//       //ceci est mon premier élément
-//    let previousSibling = currentElement.previousElementSibling;
-//       //pour cibler l'élément suivant
-//    if(){
-//    } else {
-//    }
-//    console.log(slideIndex, slides.length);
-// });
-// function nextSlide() {
-//     // je cache l'image current
-//     images[currentCard].className = 'card__c1';
-//     elementParcours[currentText].className = 'text__c1';
-//     // je passe à la prochaine image
-//     currentCard = (currentCard + 1) % images.length;
-//     currentText = (currentText +1) % elementParcours.length;
-//     // j'ajoute la classe current à ma nouvelle image pour la rendre visible
-//     images[currentCard].className = 'card current';
-//     elementParcours[currentText].className = 'text current';
-//     console.log(currentCard)
-//   }
-// function prevSlide() {    
-//     images[currentCard].className = 'card'    ;
-//     elementParcours[currentText].className = 'text';
-//     currentCard = (currentCard - 1) % images.length;
-//     currentText = (currentText - 1) % elementParcours.length;
-//     if (currentCard == -1 && currentText == -1) {
-//       currentCard = images.length - 1;
-//       currentText = elementParcours.length - 1;
-//     }    
-//     images[currentCard].className = 'card current';
-//     elementParcours[currentText].className = 'text current';
-//     console.log(currentCard)
-//   };
-// Ici ajouter une boucle pour que la fonction fasse des boucles sans sortir du tableau mais en reprenant au début ou à la fin selon la flêche sur laquelle on clique
-// for (let i = 0; i < numberOfPassengers; i++) {
-//     console.log("Passager embarqué !");
-// }
-// rightArrow2.addEventListener('click', () => {
-//   images[currentCard].classList.remove('current');
-//    nextSlide()
-// });
-// leftArrow2.addEventListener('click', () => {
-//   images[currentCard].classList.remove('current');
-//   prevSlide()
-// });
-//Carroussel scolaire ==> c1
-// const nextArrowFormation = document.querySelector('#next__formation');
-// const previousArrowFormation = document.querySelector('#previous__formation');
-// let cardTableauFormation = document.getElementsByClassName('card__c1');
-// let textTableauFormation = document.getElementsByClassName('text__c1');
-// let currentCardFormation = 0;
-// let currentTextFormation = 0;
-// nextArrowFormation.addEventListener('click', () =>{
-//   for(let i = 0; i <= cardTableauFormation.length; i++){
-//     currentCardFormation
-//   }
-// })
+});
 },{}],"C:/Users/cmfau/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -255,7 +197,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49530" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59689" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

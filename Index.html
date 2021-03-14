@@ -12,6 +12,7 @@
     <body>
         <header>
             <div class="top-bar">
+                <div class="container__logo"><img id="logo" src="img/logo-cmf.png" alt="logo"></div>
                 <nav>
                     <div class="menu__icon">
                         <a href="#mon-menu" data-js="hide">
@@ -20,14 +21,13 @@
                     </div>
                     <div class="menu--hide" id="mon-menu">
                         <ul>
-                            <li><a class="liens__menu" href="Index.html" target="_blank">Home</a></li>
-                            <li><a class="liens__menu" href="Exp.html" target="_blank">Experiences</a></li>
-                            <!--<li><a class="liens_menu" href="Coding.html" target="_blank">Coding</a></li>-->
-                            <li><a class="liens__menu" href="Contact.html" target="_blank" >Contact</a></li>
+                            <li><a class="liens__menu" href="Index.html" target="_blank"><i class="fas fa-home"></i></a></li>
+                            <li><a class="liens__menu" href="Experiences.html" target="_blank"><i class="fas fa-briefcase"></i></a></li>
+                            <li><a class="liens__menu" href="School.html" target="_blank"><i class="fas fa-graduation-cap"></i></a></li>
+                            <li><a class="liens__menu" href="Contact.html" target="_blank" ><i class="far fa-address-card"></i></a></li>
                         </ul>
                     </div>
                 </nav>
-                <div class="container__logo"><img id="logo" src="img/logo-cmf.png" alt="logo"></div>
             </div>
         </header>
         <main>
@@ -35,7 +35,7 @@
                 <div class="half half-column__image">
                     <img src="img/Profil-pix.jpg" alt="Photo de Caroline" id="profil">
                 </div>                
-                <div class="half half-column__presentation">
+                <div class="half half-column__text">
                     <div class="rows__text">
                         <h1>Caroline Fauvel</h1>
                         <h4>En formation chez Simplon</h4>
@@ -44,7 +44,10 @@
                     </div>
                     <div class="rows__button">
                         <button class="">
-                            <a href="Exp.html" target="_blank" class="liens_ext">+++</a>
+                            <a href="Experiences.html" target="_blank" class="liens_ext">Xp</a>
+                        </button>
+                        <button class="">
+                            <a href="School.html" target="_blank" class="liens_ext">Diplômes</a>
                         </button>
                         <button class="">
                             <a href="Contact.html" target="_blank" class="liens_ext">Contact</a>
@@ -55,22 +58,16 @@
         </main>
         <footer class="footer--index">            
             <div class="container__footer">
-                <div class="footer__liens--left">
-                    <i class="fab fa-github"></i>
-                    <a href="https://github.com/Cmfauvel">Github</a>
+                <div class="footer__linkedin--left">
                     <i class="fab fa-linkedin"></i>
-                    <a href="https://www.linkedin.com/in/caroline-fauvel-5086b41ba/" target="_blank">Linkedin</a>
+                    <a class="liens__footer" href="https://www.linkedin.com/in/caroline-fauvel-5086b41ba/" target="_blank">Linkedin</a>
                 </div>
-                <div class="footer__contact--center">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <p>5, rue Tournadour 93600 Aulnay-Sous-Bois</p>
-                    <i class="fas fa-at"></i>
-                    <p>cm.fauvel@gmail.com</p>
-                    <i class="fas fa-phone-square-alt"></i><br>
-                    <p>06.64.76.94.23</p>
+                <div class="footer__github--center">
+                    <i class="fab fa-github"></i>
+                    <a class="liens__footer" href="https://github.com/Cmfauvel">Github</a>
                 </div>
                 <div class="footer__copyright--right">
-                    <p>c Caroline Fauvel 2021</p>
+                    <p>© Caroline Fauvel 2021</p>
                 </div>
             </div>
         </footer>
